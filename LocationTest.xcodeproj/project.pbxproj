@@ -40,6 +40,13 @@
 			remoteGlobalIDString = F987F0691952D0A2008781F4;
 			remoteInfo = LocationTest;
 		};
+		F9B5CC111952F70D008781F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F987F0621952D0A2008781F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F987F0691952D0A2008781F4;
+			remoteInfo = LocationTest;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -235,6 +242,7 @@
 			);
 			dependencies = (
 				F987F07E1952D0A2008781F4 /* PBXTargetDependency */,
+				F9B5CC121952F70D008781F4 /* PBXTargetDependency */,
 			);
 			name = LocationTestTests;
 			productName = LocationTestTests;
@@ -352,6 +360,11 @@
 			isa = PBXTargetDependency;
 			target = F987F0691952D0A2008781F4 /* LocationTest */;
 			targetProxy = F987F07D1952D0A2008781F4 /* PBXContainerItemProxy */;
+		};
+		F9B5CC121952F70D008781F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F987F0691952D0A2008781F4 /* LocationTest */;
+			targetProxy = F9B5CC111952F70D008781F4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -540,6 +553,7 @@
 				F95E3F0A1952E6BC008781F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F987F0651952D0A2008781F4 /* Build configuration list for PBXProject "LocationTest" */ = {
 			isa = XCConfigurationList;
