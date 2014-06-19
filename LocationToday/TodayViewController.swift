@@ -1,27 +1,34 @@
 //
-//  ViewController.swift
-//  LocationTest
+//  TodayViewController.swift
+//  LocationToday
 //
 //  Created by Steffen on 19.06.14.
 //  Copyright (c) 2014 Steffen. All rights reserved.
 //
 
 import UIKit
+import NotificationCenter
 import CoreLocation
 
-class ViewController: UIViewController, CLLocationManagerDelegate{
+class TodayViewController: UIViewController, CLLocationManagerDelegate {
+//    
+//    init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+//        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+//        // Custom initialization
+//    }
 
     @IBOutlet var locationLabel: UILabel
     @IBOutlet var errorLabel: UILabel
+    @IBOutlet var statusLabel: UILabel
 
     var locationManager : CLLocationManager!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
 
         locationLabel.text = ""
         errorLabel.text = ""
+        statusLabel.text = ""
 
         if !locationManager {
             locationManager = CLLocationManager()
@@ -44,6 +51,20 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
         locationManager.stopUpdatingLocation()
     }
 
+    func widgetMarginInsetsForProposedMarginInsets(defaultMarginInsets: UIEdgeInsets) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+    }
+
+    func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)!) {
+        // Perform any setup necessary in order to update the view.
+
+        // If an error is encoutered, use NCUpdateResult.Failed
+        // If there's no update required, use NCUpdateResult.NoData
+        // If there's an update, use NCUpdateResult.NewData
+
+        completionHandler(NCUpdateResult.NewData)
+    }
+
     // MARK: CLLocationManagerDelegate
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: AnyObject[]!) {
         let location = locations[0] as CLLocation
@@ -53,27 +74,21 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     func locationManager(manager: CLLocationManager!,
         didChangeAuthorizationStatus status: CLAuthorizationStatus) {
 
-        var statusString : String!
-        switch status {
+            var statusString : String!
+            switch status {
             case .NotDetermined : statusString = "NotDetermined"
             case .Restricted : statusString = "Restricted"
             case .Denied : statusString = "Denied"
             case .Authorized : statusString = "Authorized"
             case .AuthorizedWhenInUse : statusString = "AuthorizedWhenInUse"
-        }
-        errorLabel.text = statusString
+            }
+
+            statusLabel.text = statusString
     }
 
     func locationManager(manager: CLLocationManager!,
         didFailWithError error: NSError!) {
-        println("didFailWithError: " + error.localizedDescription)
-//        errorLabel.text = error.localizedDescription
+            errorLabel.text = error.localizedDescription
     }
-
-    func locationManager(manager: CLLocationManager!,
-        didFinishDeferredUpdatesWithError error: NSError!) {
-        println("didFinishDeferredUpdatesWithError: " + error.localizedDescription)
-    }
-
+    
 }
-
