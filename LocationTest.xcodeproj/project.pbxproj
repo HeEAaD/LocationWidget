@@ -399,6 +399,7 @@
 				F987F0881952D0A2008781F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F987F0891952D0A2008781F4 /* Build configuration list for PBXNativeTarget "LocationTestTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +408,7 @@
 				F987F08B1952D0A2008781F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
