@@ -66,13 +66,12 @@ class TodayViewController: UIViewController, CLLocationManagerDelegate {
     }
 
     // MARK: CLLocationManagerDelegate
-    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: AnyObject[]!) {
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
         let location = locations[0] as CLLocation
         locationLabel.text = "\(location.coordinate.latitude) : \(location.coordinate.longitude)"
     }
 
-    func locationManager(manager: CLLocationManager!,
-        didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+    func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
 
             var statusString : String!
             switch status {

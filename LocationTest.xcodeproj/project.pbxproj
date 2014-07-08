@@ -15,7 +15,6 @@
 		F987F0721952D0A2008781F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F987F0711952D0A2008781F4 /* ViewController.swift */; };
 		F987F0751952D0A2008781F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F987F0731952D0A2008781F4 /* Main.storyboard */; };
 		F987F0771952D0A2008781F4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F987F0761952D0A2008781F4 /* Images.xcassets */; };
-		F987F0831952D0A2008781F4 /* LocationTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F987F0821952D0A2008781F4 /* LocationTestTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,20 +31,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = F95E3EF71952E6BC008781F4;
 			remoteInfo = LocationToday;
-		};
-		F987F07D1952D0A2008781F4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F987F0621952D0A2008781F4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F987F0691952D0A2008781F4;
-			remoteInfo = LocationTest;
-		};
-		F9B5CC111952F70D008781F4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F987F0621952D0A2008781F4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F987F0691952D0A2008781F4;
-			remoteInfo = LocationTest;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -75,9 +60,6 @@
 		F987F0711952D0A2008781F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F987F0741952D0A2008781F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F987F0761952D0A2008781F4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F987F07C1952D0A2008781F4 /* LocationTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F987F0811952D0A2008781F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F987F0821952D0A2008781F4 /* LocationTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTestTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,13 +72,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F987F0671952D0A2008781F4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F987F0791952D0A2008781F4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -136,7 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				F987F06C1952D0A2008781F4 /* LocationTest */,
-				F987F07F1952D0A2008781F4 /* LocationTestTests */,
 				F95E3EFC1952E6BC008781F4 /* LocationToday */,
 				F95E3EF91952E6BC008781F4 /* Frameworks */,
 				F987F06B1952D0A2008781F4 /* Products */,
@@ -147,7 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				F987F06A1952D0A2008781F4 /* LocationTest.app */,
-				F987F07C1952D0A2008781F4 /* LocationTestTests.xctest */,
 				F95E3EF81952E6BC008781F4 /* de.matthischke.LocationTest.LocationToday.appex */,
 			);
 			name = Products;
@@ -169,23 +142,6 @@
 			isa = PBXGroup;
 			children = (
 				F987F06E1952D0A2008781F4 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F987F07F1952D0A2008781F4 /* LocationTestTests */ = {
-			isa = PBXGroup;
-			children = (
-				F987F0821952D0A2008781F4 /* LocationTestTests.swift */,
-				F987F0801952D0A2008781F4 /* Supporting Files */,
-			);
-			path = LocationTestTests;
-			sourceTree = "<group>";
-		};
-		F987F0801952D0A2008781F4 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F987F0811952D0A2008781F4 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -230,25 +186,6 @@
 			productReference = F987F06A1952D0A2008781F4 /* LocationTest.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F987F07B1952D0A2008781F4 /* LocationTestTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F987F0891952D0A2008781F4 /* Build configuration list for PBXNativeTarget "LocationTestTests" */;
-			buildPhases = (
-				F987F0781952D0A2008781F4 /* Sources */,
-				F987F0791952D0A2008781F4 /* Frameworks */,
-				F987F07A1952D0A2008781F4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F987F07E1952D0A2008781F4 /* PBXTargetDependency */,
-				F9B5CC121952F70D008781F4 /* PBXTargetDependency */,
-			);
-			name = LocationTestTests;
-			productName = LocationTestTests;
-			productReference = F987F07C1952D0A2008781F4 /* LocationTestTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -263,10 +200,6 @@
 					};
 					F987F0691952D0A2008781F4 = {
 						CreatedOnToolsVersion = 6.0;
-					};
-					F987F07B1952D0A2008781F4 = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = F987F0691952D0A2008781F4;
 					};
 				};
 			};
@@ -284,7 +217,6 @@
 			projectRoot = "";
 			targets = (
 				F987F0691952D0A2008781F4 /* LocationTest */,
-				F987F07B1952D0A2008781F4 /* LocationTestTests */,
 				F95E3EF71952E6BC008781F4 /* LocationToday */,
 			);
 		};
@@ -308,13 +240,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F987F07A1952D0A2008781F4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -335,14 +260,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F987F0781952D0A2008781F4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F987F0831952D0A2008781F4 /* LocationTestTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -355,16 +272,6 @@
 			isa = PBXTargetDependency;
 			target = F95E3EF71952E6BC008781F4 /* LocationToday */;
 			targetProxy = F95E3F061952E6BC008781F4 /* PBXContainerItemProxy */;
-		};
-		F987F07E1952D0A2008781F4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F987F0691952D0A2008781F4 /* LocationTest */;
-			targetProxy = F987F07D1952D0A2008781F4 /* PBXContainerItemProxy */;
-		};
-		F9B5CC121952F70D008781F4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F987F0691952D0A2008781F4 /* LocationTest */;
-			targetProxy = F9B5CC111952F70D008781F4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -507,42 +414,6 @@
 			};
 			name = Release;
 		};
-		F987F08A1952D0A2008781F4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LocationTest.app/LocationTest";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = LocationTestTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Debug;
-		};
-		F987F08B1952D0A2008781F4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LocationTest.app/LocationTest";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = LocationTestTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -569,15 +440,6 @@
 			buildConfigurations = (
 				F987F0871952D0A2008781F4 /* Debug */,
 				F987F0881952D0A2008781F4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F987F0891952D0A2008781F4 /* Build configuration list for PBXNativeTarget "LocationTestTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F987F08A1952D0A2008781F4 /* Debug */,
-				F987F08B1952D0A2008781F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
