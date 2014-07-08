@@ -67,7 +67,7 @@ extension TodayViewController : NCWidgetProviding {
 extension TodayViewController : CLLocationManagerDelegate {
 
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
-        let location = locations[0] as CLLocation
+        let location = locations[locations.endIndex - 1] as CLLocation
         locationLabel.text = "\(location.coordinate.latitude) : \(location.coordinate.longitude)"
         updateResult = NCUpdateResult.NewData
     }
